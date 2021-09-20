@@ -318,7 +318,7 @@ export default class LocalParticipant extends Participant {
             publication = <LocalTrackPublication>pub;
           }
         }
-      } else if (track === localTrack) {
+      } else if (track.id === localTrack.id) {
         publication = <LocalTrackPublication>pub;
       }
     });
